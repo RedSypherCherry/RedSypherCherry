@@ -1,0 +1,74 @@
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+
+local win = DiscordLib:Window("Blice Hub")
+
+local serv = win:Server("Preview", "")
+
+local btns = serv:Channel("Scripts")
+
+btns:Seperator()
+
+btns:Label("Scripts (Fe)")
+
+btns:Seperator()
+
+btns:Button(
+    "Hitbox",
+    function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/HitBox%20Costumizer%20v2'))()
+        DiscordLib:Notification("Notification", "You've Executed Hitbox", "Okay")
+    end
+)
+
+btns:Button(
+    "Mode God",
+    function()
+     Local = game:GetService('Players').LocalPlayer Char  = Local.Character touched,tpdback = false, false Local.CharacterAdded:connect(function(char)     if script.Disabled ~= true then         wait(.10)         loc = Char.HumanoidRootPart.Position         Char:MoveTo(box.Position + Vector3.new(0,.5,0))     end end) game:GetService('UserInputService').InputBegan:connect(function(key)     if key.KeyCode == Enum.KeyCode.Equals then         if script.Disabled ~= true then             script.Disabled = true             print'you may re-execute'         end     end end) box = Instance.new('Part',workspace) box.Anchored = true box.CanCollide = true box.Size = Vector3.new(10,1,10) box.Position = Vector3.new(0,10000,0) box.Touched:connect(function(part)     if (part.Parent.Name == Local.Name) then         if touched == false then             touched = true             function apply()                 if script.Disabled ~= true then                     no = Char.HumanoidRootPart:Clone()                     wait(.25)                     Char.HumanoidRootPart:Destroy()                     no.Parent = Char                     Char:MoveTo(loc)                     touched = false                 end end             if Char then                 apply()             end         end     end end) repeat wait() until Char loc = Char.HumanoidRootPart.Position Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+        DiscordLib:Notification("Notification", "You've Executed Mode God", "Okay")
+    end
+)
+
+btns:Button(
+    "Invisible Tool",
+    function()
+     loadstring(game:HttpGet("https://gist.githubusercontent.com/skid123skidlol/cd0d2dce51b3f20ad1aac941da06a1a1/raw/f58b98cce7d51e53ade94e7bb460e4f24fb7e0ff/%257BFE%257D%2520Invisible%2520Tool%2520(can%2520hold%2520tools)",true))()
+        DiscordLib:Notification("Notification", "You've Executed Invisible Tool", "Okay")
+    end
+)
+
+btns:Button(
+    "Crawl/R6",
+    function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Crawling%20Gui'))()
+        DiscordLib:Notification("Notification", "You've Executed Crawl/R6", "Okay")
+    end
+)
+
+btns:Seperator()
+
+btns:Label("Scripts (Not Fe)")
+
+btns:Seperator()
+
+btns:Button(
+    "RTX",
+    function()
+     loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\110\106\121\80\48\80\77\49\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+        DiscordLib:Notification("Notification", "You've Executed RTX", "Okay")
+    end
+)
+
+btns:Button(
+    "Camera",
+    function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/CCTV%20Camera'))()
+        DiscordLib:Notification("Notification", "You've Executed Camera", "Okay")
+    end
+)
+
+serv:Channel("By RedSypher")
+
+win:Server("Hubs", "http://www.roblox.com/asset/?id=6031075938")
+    
+    
