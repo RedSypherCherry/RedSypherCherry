@@ -47,6 +47,14 @@ btns:Button(
 )
 
 btns:Button(
+    "Fly",
+    function()
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/RedSypherCherry/RedSypherCherry/main/Fly%20gui'),true))()
+        DiscordLib:Notification("Notification", "You've Executed Fly", "Okay")
+    end
+)
+
+btns:Button(
     "Game Teleporter",
     function()
      loadstring(game:HttpGet('https://pastebin.com/raw/hiWAdBMa'))()
