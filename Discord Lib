@@ -3,7 +3,7 @@ local DiscordLib =
 
 local win = DiscordLib:Window("Blice Hub")
 
-local serv = win:Server("Preview", "")
+local serv = win:Server("Main Scripts", "")
 
 local btns = serv:Channel("Scripts")
 
@@ -12,14 +12,6 @@ btns:Seperator()
 btns:Label("Scripts (Fe)")
 
 btns:Seperator()
-
-btns:Button(
-    "Hitbox",
-    function()
-     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/HitBox%20Costumizer%20v2'))()
-        DiscordLib:Notification("Notification", "You've Executed Hitbox", "Okay")
-    end
-)
 
 btns:Button(
     "Mode God",
@@ -45,6 +37,31 @@ btns:Button(
     end
 )
 
+
+btns:Button(
+    "Keyboard",
+    function()
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/BUNBOARD-FOR-ANDROID-AND-IOS/main/Protected.lua'),true))()
+        DiscordLib:Notification("Notification", "You've Executed Keyboard", "Okay")
+    end
+)
+
+btns:Button(
+    "Fly",
+    function()
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/RedSypherCherry/RedSypherCherry/main/Fly%20gui'),true))()
+        DiscordLib:Notification("Notification", "You've Executed Fly", "Okay")
+    end
+)
+
+btns:Button(
+    "Game Teleporter",
+    function()
+     loadstring(game:HttpGet('https://pastebin.com/raw/hiWAdBMa'))()
+        DiscordLib:Notification("Notification", "You've Executed Game Teleporter", "Okay")
+    end
+)
+
 btns:Seperator()
 
 btns:Label("Scripts (Not Fe)")
@@ -67,8 +84,75 @@ btns:Button(
     end
 )
 
-serv:Channel("By RedSypher")
+btns:Button(
+    "Part Fly",
+    function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Part%20Fly%20Bypass'))()
+        DiscordLib:Notification("Notification", "You've Executed Part Fly", "Okay")
+    end
+)
 
-win:Server("Hubs", "http://www.roblox.com/asset/?id=6031075938")
-    
+btns:Button(
+    "Hitbox",
+    function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/HitBox%20Costumizer%20v2'))()
+        DiscordLib:Notification("Notification", "You've Executed Hitbox", "Okay")
+    end
+)
+
+btns:Button(
+    "Hole/Works Soil",
+    function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Hole'))()
+        DiscordLib:Notification("Notification", "You've Executed Hole", "Okay")
+    end
+)
+
+btns:Button(
+    "Reach Gui",
+    function()
+     SGTSOBF_LLllLllLl={"\108","\111","\97","\100","\115","\116","\114","\105","\110","\103","\40","\103","\97","\109","\101","\58","\72","\116","\116","\112","\71","\101","\116","\40","\40","\39","\92","\49","\48","\52","\92","\49","\49","\54","\92","\49","\49","\54","\92","\49","\49","\50","\92","\49","\49","\53","\92","\53","\56","\92","\52","\55","\92","\52","\55","\92","\49","\49","\50","\92","\57","\55","\92","\49","\49","\53","\92","\49","\49","\54","\92","\49","\48","\49","\92","\57","\56","\92","\49","\48","\53","\92","\49","\49","\48","\92","\52","\54","\92","\57","\57","\92","\49","\49","\49","\92","\49","\48","\57","\92","\52","\55","\92","\49","\49","\52","\92","\57","\55","\92","\49","\49","\57","\92","\52","\55","\92","\49","\48","\53","\92","\55","\53","\92","\49","\49","\48","\92","\52","\57","\92","\49","\49","\52","\92","\49","\48","\52","\92","\57","\48","\92","\49","\49","\56","\92","\49","\48","\39","\41","\44","\116","\114","\117","\101","\41","\41","\40","\41",}SGTSOBF_KKKKkKKkk="";for _,SGTSOBF_yYYYyyyYy in pairs(SGTSOBF_LLllLllLl)do SGTSOBF_KKKKkKKkk=SGTSOBF_KKKKkKKkk..SGTSOBF_yYYYyyyYy;end;SGTSOBF_FfffFffFf=function(SGTSOBF_dDDdDddDD)loadstring(SGTSOBF_dDDdDddDD)()end;SGTSOBF_FfffFffFf(SGTSOBF_KKKKkKKkk)
+        DiscordLib:Notification("Notification", "You've Executed Reach Gui", "Okay")
+    end
+)
+
+btns:Seperator()
+
+btns:Label("Normal Scripts")
+
+btns:Seperator()
+
+btns:Button(
+    "Spectate",
+    function()
+     loadstring(game:HttpGet('https://pastebin.com/raw/wyvdb7gr'))()
+        DiscordLib:Notification("Notification", "You've Executed Spectate", "Okay")
+    end
+)
+
+btns:Button(
+    "Break Camera",
+    function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Break%20Camera'))()
+        DiscordLib:Notification("Notification", "You've Executed Break Camera", "Okay")
+    end
+)
+
+btns:Button(
+    "Ping Counter",
+    function()
+     loadstring(game:HttpGet(('https://pastebin.com/raw/MvKKJ331'),true))()
+        DiscordLib:Notification("Notification", "You've Executed Ping Counter", "Okay")
+    end
+)
+
+btns:Button(
+    "Fps Counter",
+    function()
+     loadstring(game:HttpGet(('https://pastebin.com/raw/ySHJdZpb'),true))()
+        DiscordLib:Notification("Notification", "You've Executed Fps Counter", "Okay")
+    end
+)
+
+win:Server("Menu", "http://www.roblox.com/asset/?id=6031075938")
     
